@@ -102,7 +102,7 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="media-1 border rounded shadow-sm overflow-hidden">
                         <a href="#" class="d-block mb-3">
-                            <img src="images/hero-slider-1.jpg" alt="Rialto Mountains" class="img-fluid card-image" />
+                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains" class="img-fluid card-image" />
                         </a>
                         <div class="d-flex align-items-center p-3">
                             <div>
@@ -140,7 +140,7 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="media-1 border rounded shadow-sm overflow-hidden">
                         <a href="#" class="d-block mb-3">
-                            <img src="images/hero-slider-1.jpg" alt="Rialto Mountains" class="img-fluid card-image" />
+                            <img src="{{ asset('images/hero-slider-1.jpg')}}" alt="Rialto Mountains" class="img-fluid card-image" />
                         </a>
                         <div class="d-flex align-items-center p-3">
                             <div>
@@ -178,7 +178,7 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="media-1 border rounded shadow-sm overflow-hidden">
                         <a href="#" class="d-block mb-3">
-                            <img src="images/hero-slider-1.jpg" alt="Rialto Mountains" class="img-fluid card-image" />
+                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains" class="img-fluid card-image" src="images/hero-slider-1.jpg" alt="Rialto Mountains" class="img-fluid card-image" />
                         </a>
                         <div class="d-flex align-items-center p-3">
                             <div>
@@ -216,7 +216,7 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="media-1 border rounded shadow-sm overflow-hidden">
                         <a href="#" class="d-block mb-3">
-                            <img src="images/hero-slider-1.jpg" alt="Rialto Mountains" class="img-fluid card-image" />
+                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains" class="img-fluid card-image" src="images/hero-slider-1.jpg" alt="Rialto Mountains" class="img-fluid card-image" />
                         </a>
                         <div class="d-flex align-items-center p-3">
                             <div>
