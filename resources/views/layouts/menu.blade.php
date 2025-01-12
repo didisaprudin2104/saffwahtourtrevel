@@ -13,7 +13,7 @@
                 <li class="has-children">
                     <a href="#" style="color: #333; font-weight: bold;">LAYANAN</a>
                     <ul class="dropdown">
-                        <li><a href="{{ route('layanan.umroh') }}" style="color: #333; font-weight: bold;">Paket Umroh</a></li>
+                        <li><a href="{{ route('layanan.umroh') }}" style="color: #333; font-weight: bold;">Paket Umroh1</a></li>
                         <li><a href="{{ route('layanan.haji') }}" style="color: #333; font-weight: bold;">Paket Haji</a></li>
                     </ul>
                 </li>
