@@ -29,9 +29,11 @@ route::get('/layanan', [LayananController::class, 'index'])->name('layanan');
 route::get('/layanan/umroh', [LayananController::class, 'umroh'])->name('layanan.umroh');
 route::get('/layanan/haji', [LayananController::class, 'haji'])->name('layanan.haji');
 route::get('/layanan/detail', [LayananController::class, 'detail'])->name('layanan.detail');
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::prefix('panel2025')->middleware(['auth', 'verified'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
