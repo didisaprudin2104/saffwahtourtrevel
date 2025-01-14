@@ -1,4 +1,4 @@
-<nav class="site-nav" style="background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+<nav class="site-nav" style="background-color: rgb(137, 15, 15); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
     <div class="container">
         <div class="site-navigation d-flex justify-content-between align-items-center">
             <a href="#" class="logo m-0">
