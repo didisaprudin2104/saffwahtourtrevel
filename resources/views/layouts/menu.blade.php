@@ -27,10 +27,10 @@
             </ul>
 
             <a href="#"
-                class="ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+                class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
                 data-toggle="collapse" data-target="#main-navbar">
                 <button class="burger-button">
-                    Menu
+                    <i class="fas fa-bars"></i> <!-- Font Awesome bars icon -->
                 </button>
             </a>
         </div>

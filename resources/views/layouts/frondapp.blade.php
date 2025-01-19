@@ -15,6 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" media="screen" />
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" media="screen" />
