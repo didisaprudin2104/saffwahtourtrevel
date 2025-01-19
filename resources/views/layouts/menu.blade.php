@@ -27,7 +27,7 @@
             </ul>
 
             <a href="#"
-                class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+                class="ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
                 data-toggle="collapse" data-target="#main-navbar">
                 <button class="burger-button">
                     Menu
