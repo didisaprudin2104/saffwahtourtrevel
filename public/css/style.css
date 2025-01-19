@@ -489,7 +489,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   cursor: pointer;
   position: relative; }
   .burger.light:before, .burger.light span, .burger.light:after {
-    background: #ffffff; }
+    background: #e14f2d; }
 
 .burger:before, .burger span, .burger:after {
   width: 100%;
@@ -1421,3 +1421,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       content: "\f095"; }
     .site-footer ul.quick-info li.address:before {
       content: "\e8b4"; }
+      /* 
+    Berikut adalah pengaturan untuk tombol menu:
+    - Background tombol berwarna oranye
+    - Teks tombol berwarna putih
+    - Tombol akan berubah warna saat di-hover
+*/
+.burger-button {
+    background-color: #ff5733;  /* Warna latar belakang tombol */
+    color: #fff;  /* Warna teks tombol */
+    border: none;  /* Menghilangkan border */
+    padding: 10px 20px;  /* Jarak dalam tombol */
+    font-size: 16px;  /* Ukuran font pada tombol */
+    font-weight: bold;  /* Ketebalan font pada tombol */
+    border-radius: 5px;  /* Membuat tombol lebih melengkung */
+    cursor: pointer;  /* Menampilkan kursor pointer saat hover */
+}
+
+/* Mengubah warna tombol saat di-hover */
+.burger-button:hover {
+    background-color: #e14f2d;  /* Warna tombol saat hover */
+}
