@@ -39,7 +39,7 @@
                                 @foreach($banners as $index => $banner)
                                 <tr>
                                     <td>{{ $index + 1 }}</td>
-                                    <td>{{ $banner->image }}</td>
+                                    <td>{{ $banner->title }}</td>
                                     <td>
                                         <img src="{{ asset('storage/' . $banner->image) }}" alt="Banner Image" style="width: 80px; height: auto;">
                                     </td>
