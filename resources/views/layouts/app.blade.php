@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css">
   </head>
   <body class="app sidebar-mini">
     <!-- Navbar-->
@@ -109,7 +110,7 @@
         </li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon bi bi-ui-checks"></i><span class="app-menu__label">Penagaturan</span><i class="treeview-indicator bi bi-chevron-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="#"><i class="icon bi bi-circle-fill"></i> Banner</a></li>
+            <li><a class="treeview-item" href="{{ route('panel2055.banners.index') }}"><i class="icon bi bi-circle-fill"></i> Banner</a></li>
             <li><a class="treeview-item" href="#"><i class="icon bi bi-circle-fill"></i> Tentang Kami</a></li>
           </ul>
         </li>
@@ -122,6 +123,10 @@
     <script src="{{ asset('js/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('js/plugins/bootstrap.min.js')}}"></script>
     <script src="{{ asset('js/main.js')}}"></script>
+
+    <script type="text/javascript" src="{{ asset('js/plugins/jquery.dataTables.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/plugins/dataTables.bootstrap.min.js') }}"></script>
+    <script type="text/javascript">$('#sampleTable').DataTable();</script>
     <!-- Page specific javascripts-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
     <script type="text/javascript">

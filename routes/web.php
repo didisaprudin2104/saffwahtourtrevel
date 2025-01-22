@@ -9,6 +9,8 @@ use App\Http\Controllers\TestimoniController;
 use App\Http\Controllers\LayananController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Admin\BannerController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,5 +42,15 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::prefix('panel2055')->name('panel2055.')->middleware(['auth'])->group(function() {
+    Route::resource('banners', BannerController::class);
+    Route::get('banners/create', [BannerController::class, 'create'])->name('banners.create');
+    Route::post('banners', [BannerController::class, 'store'])->name('banners.store');
+    Route::get('banners/edit/{id}', [BannerController::class, 'edit'])->name('banners.edit');
+    Route::delete('banners/{banner}', [BannerController::class, 'destroy'])->name('banners.destroy');
+});
+
+
 
 require __DIR__.'/auth.php';

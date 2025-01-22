@@ -780,7 +780,7 @@ h4,
 
 .hero {
     padding: 7rem 0 10rem 0;
-    background-image: url("/images/20221111092440804.jpg"); /* Ganti dengan URL gambar */
+    background-image: url("../images/20221111092440804.jpg"); /* Ganti dengan URL gambar */
     background-size: cover; /* Agar gambar menutupi seluruh area */
     background-position: center; /* Gambar di tengah */
     background-attachment: fixed; /* Efek paralaks */
