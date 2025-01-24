@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Banner;
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $banners = Banner::isActive()->get();
+
+        // Kirim data ke view
+        return view('home', compact('banners'));
     }
 }

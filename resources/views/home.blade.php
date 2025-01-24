@@ -26,11 +26,11 @@
 
                 <div class="col-lg-5 col-12">
                     <div class="slides">
-                        <img src="{{ asset('images/umroh.png') }}" alt="Image" class="img-fluid active" />
-                        <img src="{{ asset('images/kaca1.png') }}" alt="Image" class="img-fluid" />
-                        <img src="{{ asset('images/flayer.png') }}" alt="Image" class="img-fluid" />
-                        <img src="{{ asset('images/umroh2.png') }}" alt="Image" class="img-fluid" />
-                        <img src="{{ asset('images/kaca2.png') }}" alt="Image" class="img-fluid" />
+                        @foreach ($banners as $banner)
+                            @if ($banner->is_active)
+                                <img src="{{ asset($banner->image) }}" alt="Banner Image" class="img-fluid" />
+                            @endif
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -102,7 +102,8 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="media-1 border rounded shadow-sm overflow-hidden">
                         <a href="#" class="d-block mb-3">
-                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains" class="img-fluid card-image" />
+                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains"
+                                class="img-fluid card-image" />
                         </a>
                         <div class="d-flex align-items-center p-3">
                             <div>
@@ -140,7 +141,8 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="media-1 border rounded shadow-sm overflow-hidden">
                         <a href="#" class="d-block mb-3">
-                            <img src="{{ asset('images/hero-slider-1.jpg')}}" alt="Rialto Mountains" class="img-fluid card-image" />
+                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains"
+                                class="img-fluid card-image" />
                         </a>
                         <div class="d-flex align-items-center p-3">
                             <div>
@@ -178,7 +180,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="media-1 border rounded shadow-sm overflow-hidden">
                         <a href="#" class="d-block mb-3">
-                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains" class="img-fluid card-image" src="images/hero-slider-1.jpg" alt="Rialto Mountains" class="img-fluid card-image" />
+                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains"
+                                class="img-fluid card-image" src="images/hero-slider-1.jpg" alt="Rialto Mountains"
+                                class="img-fluid card-image" />
                         </a>
                         <div class="d-flex align-items-center p-3">
                             <div>
@@ -216,7 +220,9 @@
                 <div class="col-12 col-sm-6 col-lg-3 mb-4">
                     <div class="media-1 border rounded shadow-sm overflow-hidden">
                         <a href="#" class="d-block mb-3">
-                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains" class="img-fluid card-image" src="images/hero-slider-1.jpg" alt="Rialto Mountains" class="img-fluid card-image" />
+                            <img src="{{ asset('images/hero-slider-1.jpg') }}" alt="Rialto Mountains"
+                                class="img-fluid card-image" src="images/hero-slider-1.jpg" alt="Rialto Mountains"
+                                class="img-fluid card-image" />
                         </a>
                         <div class="d-flex align-items-center p-3">
                             <div>

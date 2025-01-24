@@ -40,7 +40,7 @@
                         <!-- Description Input -->
                         <div class="mb-3">
                             <label class="form-label">Description</label>
-                            <textarea class="form-control" name="description" rows="4" placeholder="Enter description">{{ old('description', $banner->description) }}</textarea>
+                            <textarea class="form-control" name="description" id="description" rows="4" placeholder="Enter description">{{ old('description', $banner->description) }}</textarea>
                         </div>
                         <!-- Active Checkbox -->
                         <div class="mb-3">
@@ -55,5 +55,8 @@
             </div>
         </div>
     </div>
-    
+    <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('description'); // Aktifkan CKEditor untuk textarea
+    </script>
 </x-app-layout>

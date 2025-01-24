@@ -14,5 +14,9 @@ class Banner extends Model
         'description',
         'is_active',
     ];
+     public function scopeIsActive($query)
+    {
+        return $query->where('is_active', 1);
+    }
 
 }
