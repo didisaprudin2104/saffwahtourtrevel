@@ -39,7 +39,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => public_path('images'), // Ganti dengan path ke folder public/images
-            'url' => env('APP_URL') . '/images', // URL path untuk mengakses gambar
+            'url' => env('APP_URL') . '/', // URL path untuk mengakses gambar
             'visibility' => 'public',
             'throw' => false,
         ],
