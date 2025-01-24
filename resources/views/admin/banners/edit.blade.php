@@ -55,8 +55,14 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
+    <script src="https://cdn.tiny.cloud/1/gdwactny6stknjckzytt0r1sn757exssk0p8wrx3gr2hn2n3/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
-        CKEDITOR.replace('description'); // Aktifkan CKEditor untuk textarea
+        // Initialize TinyMCE for the textarea with ID 'description'
+        tinymce.init({
+            selector: '#description',  // The ID of your textarea
+            plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+            toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | code',
+            height: 400  // Optional: Adjust the height of the editor
+        });
     </script>
 </x-app-layout>
