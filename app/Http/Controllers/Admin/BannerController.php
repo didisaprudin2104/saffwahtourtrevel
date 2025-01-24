@@ -89,7 +89,19 @@ $imagePath = 'images/' . $imageName; // Path relatif
         // Check if a new image has been uploaded
         $imagePath = $banner->image;
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('banners', 'public');
+            $image = $request->file('image');
+
+            // Tentukan path tujuan
+            $destinationPath = public_path('images'); // Folder tujuan di 'public/images'
+            
+            // Buat nama file unik
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            
+            // Pindahkan file ke folder tujuan
+            $image->move($destinationPath, $imageName);
+            
+            // Simpan path file ke dalam variabel atau database jika diperlukan
+            $imagePath = 'images/' . $imageName; // Path relatif
         }
 
         // Update the banner record
