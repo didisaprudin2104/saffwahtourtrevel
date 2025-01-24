@@ -41,7 +41,7 @@
                                     <td>{{ $index + 1 }}</td>
                                     <td>{{ $banner->title }}</td>
                                     <td>
-                                        <img src="{{ asset('images/' . $banner->image) }}" alt="Banner Image" style="width: 80px; height: auto;">
+                                        <img src="{{ asset( $banner->image) }}" alt="Banner Image" style="width: 80px; height: auto;">
                                     </td>
                                     <td style="white-space: pre-wrap; word-wrap: break-word;">
                                         {{ $banner->description }}
