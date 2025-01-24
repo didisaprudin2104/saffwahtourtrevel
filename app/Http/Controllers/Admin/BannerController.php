@@ -30,25 +30,25 @@ class BannerController extends Controller
             'description' => 'nullable|string',
             'is_active' => 'nullable|boolean',
         ]);
-        
+
 
         // Store the image and get the path
         // Tangkap file dari request
-$image = $request->file('image');
+        $image = $request->file('image');
 
-// Tentukan path tujuan
-$destinationPath = public_path('images'); // Folder tujuan di 'public/images'
+        // Tentukan path tujuan
+        $destinationPath = public_path('images'); // Folder tujuan di 'public/images'
 
-// Buat nama file unik
-$imageName = time() . '_' . $image->getClientOriginalName();
+        // Buat nama file unik
+        $imageName = time() . '_' . $image->getClientOriginalName();
 
-// Pindahkan file ke folder tujuan
-$image->move($destinationPath, $imageName);
+        // Pindahkan file ke folder tujuan
+        $image->move($destinationPath, $imageName);
 
-// Simpan path file ke dalam variabel atau database jika diperlukan
-$imagePath = 'images/' . $imageName; // Path relatif
-        
-        
+        // Simpan path file ke dalam variabel atau database jika diperlukan
+        $imagePath = 'images/' . $imageName; // Path relatif
+
+
 
         // Create a new banner record
         Banner::create([
@@ -93,13 +93,13 @@ $imagePath = 'images/' . $imageName; // Path relatif
 
             // Tentukan path tujuan
             $destinationPath = public_path('images'); // Folder tujuan di 'public/images'
-            
+
             // Buat nama file unik
             $imageName = time() . '_' . $image->getClientOriginalName();
-            
+
             // Pindahkan file ke folder tujuan
             $image->move($destinationPath, $imageName);
-            
+
             // Simpan path file ke dalam variabel atau database jika diperlukan
             $imagePath = 'images/' . $imageName; // Path relatif
         }

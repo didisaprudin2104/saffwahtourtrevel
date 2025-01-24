@@ -32,7 +32,7 @@
                             <input class="form-control" type="file" name="image">
                            @if ($banner->image)
                                 <div class="mb-2">
-                                    <img src="{{ asset('storage/' . $banner->image) }}" alt="Banner Image" class="img-thumbnail" width="150">
+                                    <img src="{{ asset($banner->image) }}" alt="Banner Image" class="img-thumbnail" width="150">
                                 </div>
                             @endif
                         </div>
