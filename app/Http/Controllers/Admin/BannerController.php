@@ -33,7 +33,21 @@ class BannerController extends Controller
         
 
         // Store the image and get the path
-        $imagePath = $request->file('image')->store('banners', 'public');
+        // Tangkap file dari request
+$image = $request->file('image');
+
+// Tentukan path tujuan
+$destinationPath = public_path('images'); // Folder tujuan di 'public/images'
+
+// Buat nama file unik
+$imageName = time() . '_' . $image->getClientOriginalName();
+
+// Pindahkan file ke folder tujuan
+$image->move($destinationPath, $imageName);
+
+// Simpan path file ke dalam variabel atau database jika diperlukan
+$imagePath = 'images/' . $imageName; // Path relatif
+        
         
 
         // Create a new banner record
